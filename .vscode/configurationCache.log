@@ -1,0 +1,1 @@
+{"buildTargets":["build","clean","client","gateway","make","messages","server","services","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

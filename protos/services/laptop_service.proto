@@ -1,0 +1,18 @@
+syntax = "proto3";
+import "laptop_message.proto";
+import "google/api/annotations.proto";
+
+option go_package = "./pb/services";
+
+
+message CreateLaptopRequest { messages.Laptop laptop = 1; }
+message CreateLaptopResponse { string id = 1; }
+
+service LaptopService {
+  rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {
+    option (google.api.http) = {
+      post: "/v1/laptop/create"
+      body: "*"
+    };
+  }; 
+}

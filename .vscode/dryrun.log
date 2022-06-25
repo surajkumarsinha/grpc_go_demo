@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/suraj54.kumar/go/src/github.com/surajkumarsinha/go_grpc_demo'
+mkdir pb
+mkdir pb/messages
+mkdir pb/services
+make messages 
+make services  
+make: Leaving directory `/Users/suraj54.kumar/go/src/github.com/surajkumarsinha/go_grpc_demo'
+ 
